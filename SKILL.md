@@ -1,5 +1,5 @@
 ---
-name: claude-design-websites
+name: design-websites-workflow
 description: Optimaler Workflow für Claude Design. Aktiviere diese Skill, wenn der User eine Website, Landing Page, Hero Section, Agentur-Site, SaaS-Dashboard, Marketing-Seite oder ähnliches mit Claude Design bauen will. Stellt sicher, dass der Agent die Anthropic-Defaults aktiv umgeht, Tokens schont (Macro-to-Micro + Tweaks-Panel) und sauber zu Claude Code handoffed.
 ---
 
