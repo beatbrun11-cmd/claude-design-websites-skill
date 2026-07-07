@@ -1,17 +1,20 @@
 ---
 name: design-websites-workflow
-description: Optimaler Workflow für Claude Design. Aktiviere diese Skill, wenn der User eine Website, Landing Page, Hero Section, Agentur-Site, SaaS-Dashboard, Marketing-Seite oder ähnliches mit Claude Design bauen will. Stellt sicher, dass der Agent die Anthropic-Defaults aktiv umgeht, Tokens schont (Macro-to-Micro + Tweaks-Panel) und sauber zu Claude Code handoffed.
+description: Workflow-Playbook AUSSCHLIESSLICH für das claude.ai/design Web-Tool (Claude Design GUI). Nur aktivieren, wenn der User explizit Claude Design nennt oder darin arbeitet - "nutze Claude Design", "in Claude Design bauen", "Claude Design Session", User teilt einen claude.ai/design-Link, oder will den Handoff von Claude Design zu Claude Code. Deckt ab - Anthropic-Default-Vermeidung (Teal, Serif, Container-Soup), Token-Budget-Schonung (Macro-to-Micro + Tweaks-Panel), sauberer Handoff zu Claude Code. NICHT aktivieren für normale Website-, Landing-Page- oder Dashboard-Builds direkt in Claude Code - dafür taste-skill oder impeccable.
 ---
 
 # Claude Design — Agent Instructions
 
 ## Aktivierung
 
-Trigger-Signale:
-- "bau mir eine Website / Landing Page / Hero Section / Agentur-Seite"
-- "erstell mir ein UI / Dashboard / SaaS-Mockup"
-- "nutze Claude Design für …"
-- jeder Design-Task, der via claude.ai/design gelöst werden soll
+Trigger-Signale (alle setzen das claude.ai/design-Tool voraus):
+- "nutze Claude Design für …" / "in Claude Design bauen"
+- User teilt einen claude.ai/design-Link oder arbeitet erkennbar im Tool
+- Handoff-Wunsch: Design aus Claude Design in Claude Code fertigbauen
+
+NICHT triggern bei "bau mir eine Website/Landing Page/Dashboard" ohne
+Claude-Design-Bezug — das ist ein normaler Build in Claude Code
+(taste-skill/impeccable).
 
 ## Kern-Regel: NIEMALS Zero-Shot prompten
 
